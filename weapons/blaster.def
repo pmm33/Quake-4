@@ -231,14 +231,14 @@ entityDef hitscan_blaster
 {
 	"range"						"10000"
 
-	"fx_impact"					"effects/weapons/blaster/impact_default.fx"
-	"fx_impact_water"			"effects/ambient/splash_smll.fx"
-	"fx_impact_concrete"		"effects/weapons/hyperblaster/impact_concrete.fx"
-	"fx_impact_flesh"			"effects/weapons/hyperblaster/impact_flesh.fx"
-	"fx_impact_monstermetal"	"effects/weapons/hyperblaster/impact_flesh.fx"
-	"fx_impact_glass"			"effects/weapons/blaster/impact_glass.fx"					
-	"fx_impact_bpglass"			"effects/weapons/blaster/impact_bpglass.fx"
-	"fx_impact_electronics"		"effects/weapons/hyperblaster/impact_electronics.fx"	
+	"fx_impact"					"effects/weapons/rocketlauncher/impact.fx"
+	"fx_impact_water"				"effects/ambient/splash_med.fx"
+	"fx_impact_concrete"				"effects/weapons/rocketlauncher/impact_concrete.fx"
+	"fx_impact_flesh"				"effects/weapons/rocketlauncher/impact.fx"
+	"fx_impact_monstermetal"			"effects/weapons/rocketlauncher/impact.fx"
+	"fx_impact_glass"				"effects/weapons/rocketlauncher/impact.fx"
+	"fx_impact_bpglass"				"effects/weapons/rocketlauncher/impact.fx"
+	"fx_impact_electronics"				"effects/weapons/rocketlauncher/impact.fx"	
 
 	"fx_path"					"effects/weapons/blaster/trail.fx"
 	
@@ -259,7 +259,7 @@ entityDef projectile_blaster
 																
 	"def_damage"				"damage_blaster"
 								
-	"velocity"					"1500 0 0"
+	"velocity"					"250 0 0"
 	"fuse"						"4"
 	"push"						"7500"
 								
@@ -274,12 +274,14 @@ entityDef projectile_blaster
 	"decal_size"				"8"
 								
 	"fx_fly"					"effects/weapons/blaster/fly.fx"
-	"fx_impact"					"effects/weapons/blaster/impact_default.fx"
-	"fx_impact_water"			"effects/ambient/splash_smll.fx"
-	"fx_impact_flesh"			"effects/weapons/blaster/impact_flesh.fx"
-	"fx_impact_monstermetal"	"effects/weapons/blaster/impact_monstermetal.fx"
-	"fx_impact_electronics"		"effects/weapons/machinegun/impact_electronics.fx"
-	"fx_impact_armor"			"effects/weapons/machinegun/impact_armor.fx"
+	"fx_impact"					"effects/weapons/rocketlauncher/impact.fx"
+	"fx_impact_water"				"effects/ambient/splash_med.fx"
+	"fx_impact_concrete"				"effects/weapons/rocketlauncher/impact_concrete.fx"
+	"fx_impact_flesh"				"effects/weapons/rocketlauncher/impact.fx"
+	"fx_impact_monstermetal"			"effects/weapons/rocketlauncher/impact.fx"
+	"fx_impact_glass"				"effects/weapons/rocketlauncher/impact.fx"
+	"fx_impact_bpglass"				"effects/weapons/rocketlauncher/impact.fx"
+	"fx_impact_electronics"				"effects/weapons/rocketlauncher/impact.fx"
 }
 
 entityDef projectile_blaster_charged
@@ -292,12 +294,14 @@ entityDef projectile_blaster_charged
 	"velocity"					"2000 0 0"
 
 	"fx_fly"					"effects/weapons/blaster/charged/fly.fx"
-	"fx_impact"					"effects/weapons/blaster/charged/impact_default.fx"
-	"fx_impact_flesh"			"effects/weapons/blaster/impact_flesh_charged.fx"
-	"fx_impact_monstermetal"	"effects/weapons/blaster/impact_monstermetal_charged.fx"
-	"fx_impact_electronics"		"effects/weapons/machinegun/impact_electronics.fx"
-	"fx_impact_armor"			"effects/weapons/machinegun/impact_armor.fx"
-
+	"fx_impact"					"effects/weapons/rocketlauncher/impact.fx"
+	"fx_impact_water"				"effects/ambient/splash_med.fx"
+	"fx_impact_concrete"				"effects/weapons/rocketlauncher/impact_concrete.fx"
+	"fx_impact_flesh"				"effects/weapons/rocketlauncher/impact.fx"
+	"fx_impact_monstermetal"			"effects/weapons/rocketlauncher/impact.fx"
+	"fx_impact_glass"				"effects/weapons/rocketlauncher/impact.fx"
+	"fx_impact_bpglass"				"effects/weapons/rocketlauncher/impact.fx"
+	"fx_impact_electronics"				"effects/weapons/rocketlauncher/impact.fx"
 
 	"def_damage"				"damage_blaster_charged"
 	"def_splash_damage"			"damage_blastersplash_charged"
@@ -310,7 +314,8 @@ entityDef projectile_blaster_charged
 entityDef damage_blaster
 {
 	"inherit"					"damage_bullet"
-	"damage"					"8"
+	"damage"					"10"
+	
 
 	"fx_wound"					"effects/wounds/energy.fx"
 
@@ -322,15 +327,15 @@ entityDef damage_blaster
 entityDef damage_blaster_charged
 {
 	"inherit"					"damage_blaster"
-	"damage"					"50"
+	"damage"					"500"
 }
 
 entityDef damage_blastersplash_charged
 {
 	"inherit"					"damage_blaster"
 	
-	"damage"					"40"
-	"radius"					"50"
-	"knockback"					"30"
+	"damage"					"250"
+	"radius"					"100"
+	"knockback"					"40"
 	"push"						"2500"
 }
